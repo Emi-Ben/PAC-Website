@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Menu */
+.menu {
+    background: #006400;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu .tab-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu .tab-btn:hover {
+    background: white;
+    color: #006400;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Volunteer Form */
+#volunteerForm {
+    background: #e6ffe6;
+    border: 1px solid #cce5cc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#volunteerForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#volunteerForm input, 
+#volunteerForm select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#volunteerForm input[type="submit"] {
+    background: #006400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#volunteerForm input[type="submit"]:hover {
+    background: #004d00;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content img {
+    max-width: 150px;
+}
+
+.footer-content a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-media-links img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+    
+    .menu .tab-btn {
+        margin: 5px 0;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+}

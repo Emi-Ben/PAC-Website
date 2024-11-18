@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Action for Climate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('your-image-path.jpg');
+            background-size: cover;  /* Ensures the image covers the whole page */
+            background-position: center;  /* Centers the image */
+            background-attachment: fixed;  /* Keeps the image fixed when scrolling */
+        }
+    </style>
+     <!-- Language Selector -->
+     <select id="language" onchange="changeLanguage()">
+        <option value="changeLanguage">Change Language</option>
+        <option value="en">English</option>
+        <option value="ig">Igbo</option>
+        <option value="ha">Hausa</option>
+        <option value="yo">Yoruba</option>
+        <option value="fr">French</option>
+        <option value="zh">Chinese</option>
+        <option value="de">German</option>
+        <option value="pg">Pidgin English</option>
+    </select>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <button class="tab-btn" onclick="showTab('home')">Home</button>
+        <button class="tab-btn" onclick="showTab('about')">About Us</button>
+        <button class="tab-btn" onclick="showTab('products')">Products</button>
+        <button class="tab-btn" onclick="showTab('gallery')">Gallery</button>
+        <button class="tab-btn" onclick="showTab('services')">Services</button>
+        <button class="tab-btn" onclick="showTab('news')">News</button>
+        <button class="tab-btn" onclick="showTab('contact')">Contact Us</button>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="tab-content">
+        <h2>Welcome to Positive Action for Climate</h2>
+        <p>Positive Action for Climate (PAC) is a Sustainable Development Goals-driven organization dedicated to promoting eco-friendly practices worldwide. Our mission is to inspire global action for a sustainable planet. Join us in our commitment to a harmonious relationship between nature and humanity.</p>
+        <img src="PAC main.png" alt="PAC Main Logo">
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="tab-content">
+        <h2>About Us</h2>
+        <p><strong>Goal:</strong> Empowering communities to adopt eco-friendly practices for sustainable living worldwide.</p>
+        <p><strong>Mission:</strong> Our mission is to inspire global action for a sustainable planet.</p>
+        <p><strong>Vision:</strong> Creating a world where nature thrives and humanity prospers harmoniously.</p>
+        <div class="team">
+            <h3>Meet the Team</h3>
+            <p>Our dedicated team members will be added soon.</p>
+        </div>
+        <button onclick="showForm('volunteerForm')">Volunteer with Us</button>
+
+        <!-- Volunteer Form -->
+        <div id="volunteerForm" style="display:none;">
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" required><br>
+                <label for="focus">Area of Focus:</label><br>
+                <input type="text" id="focus" name="focus" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div id="products" class="tab-content">
+        <h2>Our Products</h2>
+        <p>Product content...</p>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="tab-content">
+        <h2>Gallery</h2>
+        <p>Gallery content...</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="tab-content">
+        <h2>Our Services</h2>
+        <p>Services content...</p>
+    </div>
+
+    <!-- News Section -->
+    <div id="news" class="tab-content">
+        <h2>News</h2>
+        <p>News content...</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="tab-content">
+        <h2>Contact Us</h2>
+        <div>
+            <p><strong>Email:</strong> <a href="mailto:positiveactionforclimate@gmail.com">positiveactionforclimate@gmail.com</a></p>
+            <p><strong>Phone:</strong> +234(0)9160234542</p>
+            <p><strong>WhatsApp:</strong> <a href="https://chat.whatsapp.com/Gahw17PO1o3AKzGTFbhBC7">WhatsApp Link</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61557329685384&mibextid=ZbWKwL">Facebook Link</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/positiveactionforclimate?igsh=eW1mdzl2ZzUwNGlt">Instagram Link</a></p>
+            <p><strong>YouTube:</strong> <a href="https://youtube.com/@positiveactionforclimate?si=sfsE2TUFHEWFnoa_">YouTube Link</a></p>
+            <p><strong>X:</strong> <a href="https://twitter.com/PA_Climate?t=lFaKZI1Kp26wAWylfEbehg&s=09">Twitter Link</a></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <img src="PAC main white.png" alt="PAC White Logo">
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/positiveactionforclimate?igsh=eW1mdzl2ZzUwNGlt">
+                    <img src="instagram-logo.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61557329685384&mibextid=ZbWKwL">
+                    <img src="facebook-logo.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/PA_Climate?t=lFaKZI1Kp26wAWylfEbehg&s=09">
+                    <img src="twitter-logo.png" alt="Twitter">
+                </a>
+                <a href="https://youtube.com/@positiveactionforclimate?si=sfsE2TUFHEWFnoa_">
+                    <img src="youtube-logo.png" alt="YouTube">
+                </a>
+                <a href="https://chat.whatsapp.com/Gahw17PO1o3AKzGTFbhBC7">
+                    <img src="whatsapp-logo.png" alt="WhatsApp">
+                </a>
+            </div>
+            <p><strong>Email:</strong> <a href="mailto:positiveactionforclimate@gmail.com">positiveactionforclimate@gmail.com</a></p>
+            <p><strong>Website:</strong> <a href="https://positiveactionforclimate.org">positiveactionforclimate.org</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.style.display = 'none';
+            });
+            document.getElementById(tabName).style.display = 'block';
+        }
+
+        function showForm(formId) {
+            const form = document.getElementById(formId);
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('home');
+        });
+    </script>
+</body>
+</html>
